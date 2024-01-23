@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    --color1: #fff;
+    --color2: #181818;
+    --color3: #19e68c;
+    overflow-x: hidden;
+  }
+  header {
+    width: 100%;
+    height: 75px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-bar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    padding: 10px 20px;
+  }
+  
+  svg {
+    width: 50%;
+    fill: white;
+  }
+  /* Hero Section */
+  .hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+  }
+  .hero-wrapper {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  form {
+    width: 30%;
+    min-width: 350px;
+  }
+  .heading-div {
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  .heading-div > h1 {
+    font-size: 3rem;
+  }
+  .label {
+    display: flex;
+    flex-direction: column;
+  }
+  .label > label {
+    font-size: small;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+  .label > input {
+    padding: 0.9rem;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #e4dada;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  .label > input:hover,
+  .label > input:focus {
+    border: 1px solid #fff;
+    /* outline: 1px solid #fff; */
+  }
+  .label > input::placeholder {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .label > a {
+    color: var(--color3);
+    font-size: small;
+    font-weight: 600;
+  }
+  .btn {
+    margin: 1rem 0;
+  }
+  .btn > input {
+    width: 100%;
+    font-size: large;
+    background-color: #1ED760;
+    color: #000;
+    border: none;
+    padding: 0.6em;
+    border-radius: 30px;
+    font-weight: 700;
+  }
+  .btn > input:hover,
+  .btn > input:focus {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  .hline {
+    width: 100%;
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  .hline::before {
+    content: " ";
+    height: 1px;
+    background: #cdcbcb;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+  }
+  .s-hline {
+    padding: 0px 12px;
+    position: relative;
+    display: inline-block;
+    background: #121212;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    margin-block: 0px;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+  .anchor-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .anchor-btn > a {
+    width: 100%;
+    margin: 0 0 1rem 0;
+    font-size: larger;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6em;
+    border-radius: 25px;
+    border: 2px solid #cacaca;
+  }
+  .anchor-btn > a:hover,
+  .anchor-btn > a:focus {
+    border: 2px solid #fff;
+  }
+  .anchor-btn > a > span {
+    margin: 0 1.5rem;
+  }
+  .para-div {
+    margin: 1rem 0 1.5rem 0;
+    font-size: small;
+  }
+  .para-div > p {
+    color: #cacaca;
+  }
+  .para-div a {
+    color: #fff;
+  }
+  .sm {
+    font-size: smaller;
+    color: #cacaca;
+  }
+  .sm a {
+    color: #fff;
+  }
+  hr {
+    margin: 1rem 0;
+    color: #cdcbcb;
+  }
+  @media (min-width:768px) and (max-width:991px) {
+      .hero{
+          width: 100%;
+          height: fit-content;
+      }
+      .sm{
+          margin-bottom: 2rem;
+      }
+  }
+  @media (min-width:992px) and (max-width:1199px) {
+      .hero{
+          width: 100%;
+          height: fit-content ;
+      }
+      .sm{
+          margin-bottom: 2rem;
+      }
+  }
+  @media (min-width:481px) and (max-width:767px) {
+      .hero{
+          width: 100%;
+          height: fit-content ;
+      }
+      .sm{
+          margin-bottom: 2rem;
+      }
+  }
+  @media (max-width:353px) {
+      .hero{
+          width: 100%;
+          height: fit-content !important;
+      }
+      form{
+          min-width:280px;
+          height:100%;
+      }
+      .anchor-btn>a{
+          width: 100%;
+          
+      }
+      .anchor-btn>a>span{
+          margin: 0 0.3rem;
+      }
+  }
+  
